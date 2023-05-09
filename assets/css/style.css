@@ -146,6 +146,8 @@ main {
 .about {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width:80%;
   
 }
 
@@ -171,9 +173,37 @@ main {
   border: 5px solid rgba(230, 177, 32, 0.546);
 }
 
+/*  */
+.label-container{
+  width: 70%;
+}
+
 #work {
   display: flex;
   flex-direction: column;
+}
+
+.finished-projects {
+  height:300px;
+}
+
+.finished-projects div{
+height: 100px;
+width: 100px;
+
+}
+
+.project1 {
+  background-image: url("../images/1stproject.png");
+  height:300px;
+  width:800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project1 div{
+  background-color: aqua;
+  margin-top:100px;
 }
 #contact {
  display: flex;
@@ -347,4 +377,10 @@ main {
   height: 5px;
   border-radius: 50%;
   background: white;
+}
+
+/* Below I set up screen self-adjustment */
+
+@media screen and (max-width:390px){
+  
 }
