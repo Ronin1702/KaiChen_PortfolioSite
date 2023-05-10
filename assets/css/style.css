@@ -123,7 +123,7 @@ main {
   justify-content: space-between;
 }
 
-.page-section > h2 {
+.page-section>h2 {
   flex: 0 0 20%;
   text-align: left;
   padding-right: 15px;
@@ -133,8 +133,8 @@ main {
   line-height: 1.2;
 }
 
-.page-section > div {
-  display:flex;
+.page-section>div {
+  display: flex;
   flex: 0 0 77%;
 }
 
@@ -147,17 +147,19 @@ main {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width:80%;
-  
+  width: 80%;
+
 }
 
-.about label,span {
+.about label,
+span {
   background-color: bisque;
   border-style: outset;
-  padding:0px 0px 0px 10px;
+  padding: 0px 0px 0px 10px;
   text-indent: 50px;
-  margin:5px 0px 0px 5px;
+  margin: 5px 0px 0px 5px;
 }
+
 #about {
   /* display: flex;
   margin:20px 20px 20px 20px;
@@ -166,15 +168,16 @@ main {
   padding: 10px 0px 10px 20px; */
 }
 
-#about p{
+#about p {
   text-indent: 50px;
 }
-#about:hover{
+
+#about:hover {
   border: 5px solid rgba(230, 177, 32, 0.546);
 }
 
 /*  */
-.label-container{
+.label-container {
   width: 70%;
 }
 
@@ -184,35 +187,40 @@ main {
 }
 
 .finished-projects {
-  height:300px;
+  height: 300px;
 }
 
-.finished-projects div{
-height: 100px;
-width: 100px;
-
+.finished-projects div {
+  height: 30px;
+  width: 110px;
+  border:1px solid #2196F3;
 }
 
 .project1 {
+  display: flex;
+  flex-direction: row;
   background-image: url("../images/1stproject.png");
-  height:300px;
-  width:800px;
+  height: 300px;
+  width: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.project1 div{
+.project1 div {
   background-color: aqua;
-  margin-top:100px;
+  margin-top: 100px;
 }
+
 #contact {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 #resume {
   display: flex;
   flex-direction: column;
 }
+
 .contact address {
   display: flex;
   flex-wrap: column;
@@ -222,7 +230,7 @@ width: 100px;
 }
 
 .contact address a {
-   color: var(--tertiary);
+  color: var(--tertiary);
   padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;
@@ -277,12 +285,12 @@ width: 100px;
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #2196F3;
 }
 
@@ -294,7 +302,7 @@ width: 100px;
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -347,12 +355,12 @@ width: 100px;
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #2196F3;
 }
 
@@ -364,15 +372,15 @@ width: 100px;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
   top: 9px;
-  right:5px;
-  bottom:10px;
+  right: 5px;
+  bottom: 10px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -381,6 +389,4 @@ width: 100px;
 
 /* Below I set up screen self-adjustment */
 
-@media screen and (max-width:390px){
-  
-}
+@media screen and (max-width:390px) {}
