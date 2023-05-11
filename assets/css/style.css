@@ -190,7 +190,14 @@ main {
   flex-direction: column;
 }
 
+.project-containers {
+  display:flex;
+  flex-direction: wrap;
+}
+
 .finished-projects {
+  display: flex;
+  flex-direction: row;
   height: 300px;
 }
 
