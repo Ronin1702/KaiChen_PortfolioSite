@@ -182,9 +182,23 @@ span {
 .list:hover{
   border: 5px solid rgba(230, 177, 32, 0.546);
 }
-#work:hover {
+
+.project1:hover {
   border: 5px solid rgba(230, 177, 32, 0.546);
 }
+
+.project2:hover {
+  border: 5px solid rgba(230, 177, 32, 0.546);
+}
+
+.project3:hover {
+  border: 5px solid rgba(230, 177, 32, 0.546);
+}
+
+.project4:hover {
+  border: 5px solid rgba(230, 177, 32, 0.546);
+}
+
 
 .mugshot {
   margin-left: 130px;
@@ -219,7 +233,8 @@ span {
 .finished-projects div {
   height: 30px;
   width: 110px;
-  border: 1px solid #2196F3;
+  border: 1px solid #c5cbcf;
+  margin-bottom: 0px;
 }
 
 .project1 {
@@ -232,7 +247,7 @@ span {
 }
 
 .project1 div {
-  background-color: aqua;
+  background-color: rgba(96, 201, 212, 0.605);
   margin-top: 200px;
   width: 200px;
   text-align: center;
@@ -246,22 +261,26 @@ span {
   background-size: contain;
 }
 
-.project2 div {
-  background-color: aqua;
+.project2 div{
+  background-color: rgba(96, 201, 212, 0.605);
   margin-top: 200px;
   width: 200px;
   text-align: center;
 }
 
 .project3 {
+  
   background-image: url("../images/logo-16333045906.png");
   background-repeat: no-repeat;
   background-size: contain;
+  height: 100px;
   margin-top: 60px;
 }
 
+
+
 .project3 div {
-  background-color: aqua;
+  background-color: rgba(96, 201, 212, 0.605);
   margin-top: 140px;
   width: 200px;
   text-align: center;
@@ -271,12 +290,13 @@ span {
   background-image: url("../images/02-portfolio-2.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 20px;
+  
+  height: 200px;
 }
 
 .project4 div {
-  background-color: aqua;
-  margin-top: 180px;
+  background-color: rgba(96, 201, 212, 0.605);
+  margin-top: 200px;
   width: 200px;
   text-align: center;
 }
