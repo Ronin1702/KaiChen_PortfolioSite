@@ -219,8 +219,10 @@ span {
   flex-direction: column;
 }
 
-.project-container {
-  
+.project-containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-right: 200px;
 }
 
@@ -235,9 +237,6 @@ span {
   width: 110px;
   border: 1px solid #c5cbcf;
   margin-bottom: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .project1 {
@@ -290,7 +289,6 @@ span {
   width: 200px;
   text-align: center;
 }
-
 
 
 
