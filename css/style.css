@@ -239,16 +239,18 @@ span {
 
 .project1 {
   background-image: url("../images/1stproject.png");
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 400px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: top;
+  margin-left: 90px;
 }
 
 .project1 div {
   background-color: rgba(96, 201, 212, 0.605);
-  margin-top: 200px;
+  margin-top: 300px;
+  margin-left:100px;
   width: 200px;
   text-align: center;
 }
