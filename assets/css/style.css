@@ -114,7 +114,7 @@ main {
 }
 
 .page-section {
-  margin: 25px 0;
+  margin: 25px 25px 0 25px;
   padding: 10px 0;
   display: flex;
   flex-direction: row;
@@ -135,6 +135,7 @@ main {
 
 .page-section>div {
   display: flex;
+  flex-direction: wrap;
   flex: 0 0 77%;
 }
 
@@ -151,7 +152,8 @@ main {
 
 }
 
-.about label,span {
+.about label,
+span {
   background-color: bisque;
   border-style: outset;
   padding: 0px 0px 0px 10px;
@@ -161,7 +163,13 @@ main {
 
 #about {
   display: flex;
-  margin:20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 0px 10px 20px;
+}
+
+#work {
+  display: flex;
+  margin: 20px 20px 20px 20px;
   padding: 10px 0px 10px 20px;
 }
 
@@ -170,13 +178,14 @@ main {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#about:hover {
+
+#work:hover {
   border: 5px solid rgba(230, 177, 32, 0.546);
 }
 
 .mugshot {
   height: 300px;
-  width:250px;
+  width: 250px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -191,8 +200,10 @@ main {
 }
 
 .project-containers {
-  display:flex;
-  flex-direction: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 200px;
 }
 
 .finished-projects {
@@ -209,16 +220,63 @@ main {
 
 .project1 {
   background-image: url("../images/1stproject.png");
-  height: 300px;
-  width: 500px;
+  height: 200px;
+  width: 200px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 .project1 div {
   background-color: aqua;
-  margin-top: 100px;
+  margin-top: 200px;
+  width: 200px;
+  text-align: center;
 }
+
+.project2 {
+  background-image: url("../images/bowtie-cat.png");
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project2 div {
+  background-color: aqua;
+  margin-top: 200px;
+  width: 200px;
+  text-align: center;
+}
+
+.project3 {
+  background-image: url("../images/logo-16333045906.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 60px;
+}
+
+.project3 div {
+  background-color: aqua;
+  margin-top: 140px;
+  width: 200px;
+  text-align: center;
+}
+
+.project4 {
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+}
+
+.project4 div {
+  background-color: aqua;
+  margin-top: 180px;
+  width: 200px;
+  text-align: center;
+}
+
 
 #contact {
   display: flex;
@@ -232,14 +290,16 @@ main {
 
 .contact address {
   display: flex;
-  
+
   height: 100%;
 }
 
-.container{
+.contacts-container {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: wrap;
+  justify-content: space-evenly;
 }
+
 .contact address a {
   color: var(--tertiary);
   padding: 5px;
@@ -401,5 +461,10 @@ main {
 /* Below I set up screen self-adjustment */
 
 @media screen and (max-width:390px) {
+  .project-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 }
