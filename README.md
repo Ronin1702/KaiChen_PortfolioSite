@@ -10,10 +10,10 @@ The first application is presented in a larger size than others.
 This site should resize itself according to the user's screen size.
 
 
-A link to the deployed website is https://ronin1702.github.io/Portfolio/
+A link to the deployed website is https://ronin1702.github.io/KaiChen_PortfolioSite/
 
 ## Below is a Screenshot example of the final website
-![Screenshot](./Screenshots/Screenshot.png)
+![Screenshot](./assets/images/PortfolioScreenshot.png)
 
 ## Credits
-I worked on this project with Jianxiong Chen and Jacob McKitrick.
+I worked on this project with given starter codes.
