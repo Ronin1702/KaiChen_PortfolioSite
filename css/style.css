@@ -94,13 +94,13 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url('../images/Victoria\ Peak.jpg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url('../images/Victoria\ Peak.jpg'), linear-gradient(180deg, var(--secondary) 20%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
-  min-height: 30vh;
+  min-height: 35vh;
   color: var(--light);
-  padding: 2% 6%;
+  padding: 8% 6%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -108,13 +108,16 @@ main {
 }
 
 .page-wrapper {
-  max-width: 88%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .page-section {
-  margin: 25px 25px 0 25px;
+  margin: 25px 25px 25px 25px;
   padding: 10px 0;
   display: flex;
   flex-direction: row;
