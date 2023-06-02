@@ -1,4 +1,4 @@
-# KaiChen_PortfolioSite for Week 2 Challenge
+# PortfolioSite for Week 2 Challenge
 
 ## Descrption
 This is our second homework project websit for my personal portfolio.
