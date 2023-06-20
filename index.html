@@ -3,93 +3,102 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kai Chen // Web Developer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Kai Chen</h1>
-    <nav>
-      <ul>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-
-
+  <div class="container-fluid">
+    <header class="row">
+      <h1 class="col section-name" id="headerName">Kai Chen</h1>
+      <ul class="nav col justify-content-end">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </ul>
-    </nav>
-  </header>
+    </header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
+    <section class="row hero-banner">
       <i lang="la">Sī Vīs Pācem, Parā Bellum!</i>
-    </div>
-  </section>
+    </section>
 
-  <main class="page-wrapper">
-
-    <section class="page-section about" id="about">
-      <h2 class="page-section about" id="about">About</h2>
-        <div>
-          <img class=mugshot src="./images/MugShot.jpg">
-            <p id="about">
-              <ul class="list">
-                <li>My name is Kai Chen, and I created this website to help demonstrate what I've learned in OSU Bootcamp Class.</li><br>
-                <li>In 2013, I graduated from Ohio Dominican University with a master degree in Business Administration.</li><br>
-                <li>Right after graudation I was hired by LONGLAND, an gobal electronic components distribution company headquartered in Shenzhen, China.</li><br>
-                <li>In 2017 I formed IVT Power Corp and joined Sendyne New York to help develop a CAN-system ATD sensor board with shunt techonology for the BMS of EVs.</li><br>
-                <li>The same year I was elected to act as the Vice President of Guangdong Province EV Industry Association.</li><br>
-              </ul>
-            </p>
+    <section class="row justify-content-around" id="about">
+      <h2 class="section-name opacity-75">About</h2>
+      <div class="row mt-2 mb-2">
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <img class="img-fluid w-auto rounded" alt="Mugshot" src="./images/MugShot.jpg">
+        </div>
+        <div class="mt-2 col-lg-9 col-md-12 col-sm-12">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item col-12">My name is Kai Chen, and I created this website to help demonstrate what
+              I've
+              learned in OSU Coding Bootcamp.</li>
+          </ul>
+          <br>
+          <ul class="list-group list-group-horizontal d-flex justify-content-between align-items-start">
+            <li class="col-lg-6 list-group-item">
+              In 2013, I graduated from Ohio Dominican University with a master degree in
+              Business Administration.
+            <li class="col-lg-6 list-group-item">Same year I was hired by LONGLAND, a global electronic components
+              distribution
+              company hq'ed in Shenzhen, China.</li>
+          </ul>
+          <ul class="list-group list-group-horizontal d-flex justify-content-between align-items-start">
+            <li class="col-6 list-group-item">In 2017, I formed IVT Power Corp and joined Sendyne New York to develop a
+              CAN-system ATD sensor with shunt technology for EV BMS.</li>
+            <li class="col-6 list-group-item">Same year, I was elected as the Vice President of Guangdong
+              Province
+              EV Industry Association.</li>
+            </li>
+          </ul>
         </div>
       </div>
-      </article>
     </section>
 
-    <section class="page-section work" id="work">
-      <h2 id="work">Work</h2>
-      <div class="project-containers">
-        <div class="finished-projects">
-
-          <a class="project1" href="https://ronin1702.github.io/Code-Refactor/">
-            <div>Code-Refactor</div>
+    <section class="row mb-2" id="work">
+      <h2 class="mb-2 section-name opacity-75">Work</h2>
+      <div class="row">
+        <div class="col card">
+          <h3 class="card-title text-center">krapyak</h3>
+          <a target="_blank" class="card-body" href="https://ronin1702.github.io/krapyak/">
+            <img id="projectImages"class="img-fluid" src="https://github.com/Ronin1702/krapyak/assets/131202032/b511f917-8cb1-47e4-9fe0-6fb7f797954a">
           </a>
-
-
-          <a class="project2" href="https://ronin1702.github.io/Prework-Study-Guide/">
-            <div>Prework-Study-Guide</div>
+        </div>
+        <div class="col card">
+          <h3 class="card-title text-center">Code-Refactor</h3>
+          <a target="_blank" class="card-body" href="https://ronin1702.github.io/Code-Refactor/">
+            <img id="projectImages"class="img-fluid" src="./images/code-refactor.png">
           </a>
-
-          <a class="project3" href="http://www.szlongland.com/">
-            <div>LONGLAND</div>
+        </div>
+        <div class="col card">
+          <h3 class="card-title text-center">Prework-Study-Guide</h3>
+          <a target="_blank" class="card-body" href="https://ronin1702.github.io/Prework-Study-Guide/">
+            <img id="projectImages"class="img-fluid" src="./images/Prework-Study-Guide.png" alt="Prework-Study-Guide">
+          </a>
+        </div>
+        <div class="col card">
+          <h3 class="card-title text-center">LONGLAND</h3>
+          <a target="_blank" class="card-body text-center" href="http://www.szlongland.com/"><img id="projectImages"class="img-fluid"
+              src="./images/LONGLAND.png">
           </a>
         </div>
       </div>
-
-
     </section>
 
-    <section class="page-section contact" id="contact">
-      <h2 class="contact">Contact</h2>
-      <div class="contacts-container">
-        <address>
-          <a href="tel:+16145652933"> Mobile</a>
-          <a href="mailto:kchen@me.com"> Email</a>
-          <a href="https://github.com/Ronin1702"> GitHub</a>
-          <a href="https://www.linkedin.com/in/kchen0755"> Linked In</a>
-        </address>
-      </div>
+    <section class="row mb-2" id="contact">
+      <h2 class="col section-name opacity-75">Contact</h2>
+      <ul class="col text-center">
+        <a href="tel:+16145652933">Mobile</a>
+        <a href="mailto:kchen@me.com">Email</a>
+        <a href="https://github.com/Ronin1702">GitHub</a>
+        <a href="https://www.linkedin.com/in/kchen0755">LinkedIn</a>
+      </ul>
     </section>
 
-
-
-    </section>
-  </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

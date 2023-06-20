@@ -12,39 +12,18 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: var(--primary);
   background-color: var(--light);
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 25px;
-}
-
-p {
-  margin: 25px;
-}
-
 header {
-  padding: 15px 6% 15px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
   background-color: var(--tertiary);
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
-header h1 {
+#headerName {
   color: var(--tertiary);
   background-color: var(--secondary);
   padding: 5px 1% 5px 6%;
@@ -53,28 +32,84 @@ header h1 {
   line-height: 1;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+.section-name {
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 3vw;
+  line-height: 1;
 }
 
-/* nav a {
-  color: var(--primary);
-  padding: 5px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-style: normal;
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  margin: 0 0.2rem 0.1rem;
-  display: inline-block;
-} */
+.section-name:hover {
+  text-align: center;
+  animation: shake-myname 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  box-shadow: 5px 5px 8px var(--black);
+}
 
-nav a {
+
+@keyframes shake-myname {
+
+  0% {
+    transform: scale(1.15) translate(1px, 2px) rotate(0deg);
+    color: var(--blue1);
+  }
+
+  10% {
+    transform: scale(1.15) translate(-1px, -1px) rotate(-1deg);
+    color: var(--blue1);
+  }
+
+  20% {
+    transform: scale(1.15) translate(-3px, 0px) rotate(1deg);
+    color: var(--blue2);
+  }
+
+  30% {
+    transform: scale(1.15) translate(3px, 1px) rotate(0deg);
+    color: var(--blue2);
+  }
+
+  40% {
+    transform: scale(1.15) translate(1px, -2px) rotate(1deg);
+    color: var(--blue3);
+  }
+
+  50% {
+    transform: scale(1.15) translate(-1px, 1px) rotate(-1deg);
+    color: var(--blue3);
+  }
+
+  60% {
+    transform: scale(1.15) translate(-3px, -2px) rotate(0deg);
+    color: var(--blue4);
+  }
+
+  70% {
+    transform: scale(1.15) translate(3px, 1px) rotate(-1deg);
+    color: var(--blue4);
+  }
+
+  80% {
+    transform: scale(1.15) translate(-1px, -0px) rotate(1deg);
+    color: var(--blue5);
+  }
+
+  90% {
+    transform: scale(1.15) translate(1px, -1px) rotate(0deg);
+    color: var(--blue5);
+  }
+
+  100% {
+    transform: scale(1.15) translate(1px, 2px) rotate(-1deg);
+    color: var(--blue5);
+  }
+}
+
+
+.nav a {
   text-decoration: none;
   padding: 5px 10px;
   color: var(--secondary);
@@ -85,11 +120,6 @@ nav a {
   background-position: bottom;
   transition: all 0.25s ease-in;
   font-size: 1.4rem;
-}
-
-main {
-  margin-top: 20px;
-  margin-bottom: 45px;
 }
 
 .hero-banner {
@@ -107,217 +137,11 @@ main {
   text-align: right;
 }
 
-.page-wrapper {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-section {
-  margin: 25px 25px 25px 25px;
-  padding: 10px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: right;
-  justify-content: space-between;
-}
-
-.page-section>h2 {
-  flex: 0 0 20%;
-  text-align: left;
-  padding-right: 15px;
-  /* border-right: 5px solid var(--primary); */
-  align-content: center;
-  font-size: 4vw;
-  line-height: 1.2;
-}
-
-.page-section>div {
-  display: flex;
-  flex-direction: wrap;
-  flex: 0 0 77%;
-}
-
-.page-section p {
-  margin-bottom: 20px;
-}
-
-
-.about {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 80%;
-
-}
-
-.about label,
-span {
-  background-color: bisque;
-  border-style: outset;
-  padding: 0px 0px 0px 10px;
-  text-indent: 50px;
-  margin: 5px 0px 0px 5px;
-}
-
-#about {
-  display: flex;
-  flex-direction: wrap;
-  margin: 20px 20px 20px 20px;
-  padding: 10px 20px 10px 20px;
-}
-
-#work {
-  display: flex;
-  margin: 20px 20px 20px 20px;
-  padding: 10px 0px 10px 20px;
-}
-
-#contact{
-  display: flex;
-  margin: 20px 20px 20px 20px;
-  padding: 10px 0px 10px 20px;
-}
-
-.list{
-  font-size: 100%;
-}
-
-.list:hover{
+.card:hover {
   border: 5px solid rgba(230, 177, 32, 0.546);
 }
 
-.project1:hover {
-  border: 5px solid rgba(230, 177, 32, 0.546);
-}
-
-.project2:hover {
-  border: 5px solid rgba(230, 177, 32, 0.546);
-}
-
-.project3:hover {
-  border: 5px solid rgba(230, 177, 32, 0.546);
-}
-
-
-
-.mugshot {
-  margin-left: 130px;
-  height: 500px;
-  width: 400px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.label-container {
-  width: 70%;
-}
-
-#work {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-containers {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-right: 200px;
-}
-
-.finished-projects {
-  display: flex;
-  flex-direction: row;
-  height: 300px;
-}
-
-.finished-projects div {
-  height: 30px;
-  width: 110px;
-  border: 1px solid #c5cbcf;
-  margin-bottom: 0px;
-}
-
-.project1 {
-  background-image: url("../images/1stproject.png");
-  height: 300px;
-  width: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  margin-left: 90px;
-}
-
-.project1 div {
-  background-color: rgba(96, 201, 212, 0.605);
-  margin-top: 300px;
-  margin-left:100px;
-  width: 200px;
-  text-align: center;
-}
-
-.project2 {
-  background-image: url("../images/bowtie-cat.png");
-  height: 200px;
-  width: 200px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.project2 div{
-  background-color: rgba(96, 201, 212, 0.605);
-  margin-top: 200px;
-  width: 200px;
-  text-align: center;
-}
-
-.project3 {
-  
-  background-image: url("../images/logo-16333045906.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100px;
-  margin-top: 60px;
-}
-
-
-
-.project3 div {
-  background-color: rgba(96, 201, 212, 0.605);
-  margin-top: 140px;
-  width: 200px;
-  text-align: center;
-}
-
-
-
-#contact {
-  display: flex;
-  flex-direction: column;
-}
-
-#resume {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact address {
-  display: flex;
-
-  height: 100%;
-}
-
-.contacts-container {
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-evenly;
-}
-
-.contact address a {
+#contact a {
   color: var(--tertiary);
   padding: 5px;
   text-decoration: none;
@@ -333,155 +157,7 @@ span {
 }
 
 
-.contact address a:hover {
+#contact a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
-}
-
-/* Below I added the radio button to my goals checklist */
-/* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input~.checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.container input:checked~.checkmark {
-  background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.container input:checked~.checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-/* Below is my website goals css */
-/* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default radio button */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input~.checkmark {
-  background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked~.checkmark {
-  background-color: #2196F3;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked~.checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-  top: 9px;
-  right: 5px;
-  bottom: 10px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: white;
-}
-
-/* Below I set up screen self-adjustment */
-
-@media screen and (max-width:390px) {
-  .project-containers {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
 }
