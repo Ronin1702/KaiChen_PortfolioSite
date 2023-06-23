@@ -152,7 +152,6 @@ header {
   background-position: bottom;
   transition: all 0.25s ease-in;
   margin: 0 0.2rem 0.1rem;
-  display: inline-block;
 }
 
 
@@ -163,4 +162,14 @@ header {
 
 #projectImages{
   max-height: 45vh;
+}
+
+#sms {
+  display: none; 
+}
+
+@media (max-width: 991px) {
+  #sms {
+    display: inline-block; 
+  }
 }
