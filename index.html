@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kai Chen // Web Developer</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -19,125 +19,166 @@
         <a class="nav-link fa" href="#contact">Contact</a>
       </span>
     </header>
-    <div class="row hero-banner">
-      <i lang="la">Sī Vīs Pācem, Parā Bellum!</i>
+    <div class="row pe-2 py-1 text-end align-content-end hero-banner">
+      <p class="fst-italic fw-bold">Victoria Peak, Hong Kong</p>
 
     </div>
+
     <div class="row" id="about">
-      <h2 class="fa mt-2 section-name opacity-75"><i class="fa-solid fa-id-card-clip"></i> About</h2>
-      <div class="row ms-2 mb-3">
-        <div class="mt-2 col-lg-3 col-md-4 col-sm-4">
-          <img class=" img-fluid img-thumbnail rounded" alt="Mugshot" src="./images/MugShot.jpg">
+      <h2 class="fa mt-2 section-name text-secondary"><i class="fa-solid fa-id-card-clip"></i> About</h2>
+      <div class="row row-cols-lg-3 cols-md-1 ms-2 mb-3">
+        <!-- about section below-->
+        <div class="mt-2 col-lg-3" id="profilePic">
+          <img class="img-fluid img-thumbnail rounded" alt="Mugshot" src="./images/MugShot.jpg">
         </div>
-        <div class="mt-2 col-lg-9 col-md-12 col-sm-12">
-          <ul class="list-group">
-            <li class="list-group-item col-12 rounded">Hi, my name is <span class="fw-bold">Kai Chen</span>. I have
-              created this website to help demonstrate what
-              I've
-              learned in the OSU Coding Bootcamp.</li>
-          </ul>
-          <br>
-          <ul class="col-12 list-group list-group-horizontal">
-            <li class="col-6 list-group-item">
-              <span class="fw-bold">2013</span>, I graduated from <span class="fw-bold">Ohio Dominican University</span>
-              with a Master Degree in
-              Business Administration.
-            <li class="col-6 list-group-item">Same year, I started working in <a target="_blank"
-                href="https://www.baidu.com/link?url=FvvF346VL0sXTpROLmH06_c4Hw6VUyJ8eOw8j5-FpM4t0W14uMP_pbSYTsvx9thR&wd=&eqid=e883b621000b7f5f000000066493a040">LONGLAND</a>,
-              a global electronic components
-              distribution
-              company hq'ed in Shenzhen, China.</li>
-          </ul>
-          <br>
-          <ul class="col-12 list-group list-group-horizontal">
-            <li class="col-6 list-group-item"><span class="fw-bold">2017</span>, I formed IVT Power Corp and joined
-              Sendyne New York to develop a <span class="text-decoration-underline" data-bs-toggle="tooltip"
-                title="Control Area Network">CAN-system</span> <span class="text-decoration-underline"
-                data-bs-toggle="tooltip" title="Analog to Digital">ATD</span> sensor with shunt technology for <span
-                class="text-decoration-underline" data-bs-toggle="tooltip" title="Eletric Vehicles">EV</span> <span
-                class="text-decoration-underline" data-bs-toggle="tooltip" title="Battery Management System">BMS</span>.
-            </li>
-            <li class="col-6 list-group-item">Same year, I was elected as the Vice President of Guangdong
-              Province
-              EV Industry Association.</li>
-            </li>
-          </ul>
+
+        <div class="mt-2 col-lg-2 list-group rounded text-end" id="aboutList">
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-1">Introduction</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-2">1988</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-3">.</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-4">.</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-5">.</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-6">2013</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-7">2017</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-8">2023</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-9">.</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-10">.</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-11">.</a>
+          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-12">2070</a>
+
         </div>
+
+        <div id="article" class="mt-2 col-lg-7 overflow-scroll scrollspy" data-bs-spy="scroll"
+          data-bs-target="#aboutList" data-bs-smooth-scroll="true" style="height: 500px;" tabindex="0">
+          <!-- Your content here -->
+
+          <h4 id="list-item-1" class="fw-bold">Please allow me to introduce myself:</h4>
+          <p>Hi, my name is <span class="fw-bold">Kai Chen</span>. I have
+            created this website to demonstrate what
+            I've
+            learned in the OSU Coding BootCamp.</p>
+          <hr>
+          <h4 id="list-item-2" class="fw-bold">1988</h4>
+          <p>Born in the Year of <span class="fw-bold">Dragon</span>, I've always dreamed higher than the sky, and
+            contemplated deeper than the ocean. Being the 37th generation of my family, it's a bless and a curse. Life begins.</p>
+          <hr>
+          <h4 id="list-item-6" class="fw-bold">2013</h4>
+          <p>Graduated from <span class="fw-bold">Ohio Dominican University</span>
+            with a Master Degree in
+            Business Administration.</p>
+          <p>Started working in <span class="fw-bold"><a target="_blank"
+                href="https://www.baidu.com/link?url=FvvF346VL0sXTpROLmH06_c4Hw6VUyJ8eOw8j5-FpM4t0W14uMP_pbSYTsvx9thR&wd=&eqid=e883b621000b7f5f000000066493a040">LONGLAND</a></span>,
+            a global electronic components
+            distribution
+            company hq'ed in the Silicon Valley of China: <span class="fw-bold">Shenzhen</span>.</p>
+          <hr>
+          <h4 id="list-item-7" class="fw-bold">2017</h4>
+          <p>Formed IVT Power Corp and joined
+            SENDYNE New York to develop a <span class="text-decoration-underline fst-italic" data-bs-toggle="tooltip"
+              title="Control Area Network">CAN System</span> <span class="fst-italic text-decoration-underline"
+              data-bs-toggle="tooltip" title="Analog to Digital">ATD</span>
+            sensor with shunt technology for <span class="text-decoration-underline fst-italic" data-bs-toggle="tooltip"
+              title="Electric Vehicles">EV</span> <span class="text-decoration-underline fst-italic"
+              data-bs-toggle="tooltip" title="Battery Management System">BMS</span>.</p>
+          <p>SPF-200 development was a success. Helping making things safer and more affordable, the module is now
+            widely used in various areas such as EV, Aviation, Satellites, etc. </p>
+          <p>Elected as the Vice President of <span
+              class="text-decoration-underline fst-italic fw-bold"><a data-bs-toggle="tooltip"
+                title="Guangdong New Energy Vehicles Industry Association" target="_blank"
+                href="https://www.baidu.com/link?url=lDhH_GtLKfwmmJFy_xHkmVCE2eLec40FL5rvFW8daGhxUtI3bBWgdbq_ERp54ddZ&wd=&eqid=ba75d116003790f00000000664953b96">GDNEVIA</a>.
+          </p>
+          <hr>
+          <h4 id="list-item-8" class="fw-bold">2023</h4>
+          <p>God blessed me with an angel from heaven earlier this year. She is my first born. She will be the 38th
+            generation of my family. She is my everything and more.</p>
+          <p>Soon after my daughter was born I joined OSU Full-Stack Developer Program.</p>
+          <hr>
+          <p class="fst-italic text-muted text-end">"One day you'll leave this world behind,</p>
+          <p class="fst-italic text-muted text-end">So live a life you will remember."</p>
+          <p class="fst-italic text-muted text-end">- My father told me</p>
+          <hr>
+          <h4 id="list-item-12" class="fw-bold">2070</h4>
+          <p>By average a human has about <span class="fts-bold">30,000</span> days on planet earth.</p>
+          <p>November 3 2070 will be my 30,000th day. I pray that I may still code and hope at the age of 82.</p>
+          <hr>
+        </div>
+        <!-- about section above -->
       </div>
     </div>
-    <div class="row mb-2" id="work">
-      <h2 class="fa section-name opacity-75"><i class="fa-solid fa-laptop-code"></i> Work</h2>
-      <div class="row ms-3 mt-2 ">
-        <div class="col-lg-3 col-md-6 card">
-          <h3 class="card-title text-center mt-2">krapyak</h3>
-          <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/krapyak/">
-            <img id="projectImages" class="img-fluid"
-              src="https://github.com/Ronin1702/krapyak/assets/131202032/b511f917-8cb1-47e4-9fe0-6fb7f797954a">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 card">
-          <h3 class="card-title text-center mt-2">Weather-Dashboard</h3>
-          <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Weather-Dashboard//">
-            <img id="projectImages" class="img-fluid" src="./images/Weather-Dashboard.png">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 card">
-          <h3 class="card-title text-center mt-2">Work-Day-Scheduler</h3>
-          <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Work-Day-Scheduler/"><img
-              id="projectImages" class="img-fluid" src="./images/Work-Day-Scheduler.png">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 card">
-          <h3 class="card-title text-center mt-2">Code-Quiz</h3>
-          <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Code-Quiz/"><img
-              id="projectImages" class="img-fluid" src="./images/Code-Quiz.png">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 card">
-          <h3 class="card-title text-center mt-2">Code-Refactor</h3>
-          <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Code-Refactor/">
-            <img id="projectImages" class="img-fluid" src="./images/Code-Refactor.png">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 card">
-          <h3 class="card-title text-center mt-2">Prework-Study-Guide</h3>
-          <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Prework-Study-Guide/">
-            <img id="projectImages" class="img-fluid" src="./images/Prework-Study-Guide.png" alt="Prework-Study-Guide">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 card">
-          <h3 class="card-title text-center mt-2">LONGLAND</h3>
-          <a target="_blank" class="card-body text-center"
-            href="https://www.baidu.com/link?url=FvvF346VL0sXTpROLmH06_c4Hw6VUyJ8eOw8j5-FpM4t0W14uMP_pbSYTsvx9thR&wd=&eqid=e883b621000b7f5f000000066493a040"><img
-              id="projectImages" class="img-fluid" src="./images/LONGLAND.png">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 card">
-          <h3 class="card-title text-center mt-2">Password Generator</h3>
-          <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/password-generator//"><img
-              id="projectImages" class="img-fluid" src="./images/PasswordGenerator.png">
-          </a>
-        </div>
+  </div>
+  <div class="row mb-3" id="work">
+    <h2 class="fa section-name text-secondary"><i class="fa-solid fa-laptop-code"></i> Work</h2>
+    <div class="row ms-3 mt-2 ">
+      <div class="col-lg-3 col-md-6 card">
+        <h3 class="card-title text-center mt-2">krapyak</h3>
+        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/krapyak/">
+          <img id="projectImages" class="img-fluid"
+            src="https://github.com/Ronin1702/krapyak/assets/131202032/b511f917-8cb1-47e4-9fe0-6fb7f797954a">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 card">
+        <h3 class="card-title text-center mt-2">Weather-Dashboard</h3>
+        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Weather-Dashboard//">
+          <img id="projectImages" class="img-fluid" src="./images/Weather-Dashboard.png">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 card">
+        <h3 class="card-title text-center mt-2">Work-Day-Scheduler</h3>
+        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Work-Day-Scheduler/"><img
+            id="projectImages" class="img-fluid" src="./images/Work-Day-Scheduler.png">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 card">
+        <h3 class="card-title text-center mt-2">Code-Quiz</h3>
+        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Code-Quiz/"><img
+            id="projectImages" class="img-fluid" src="./images/Code-Quiz.png">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 card">
+        <h3 class="card-title text-center mt-2">Code-Refactor</h3>
+        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Code-Refactor/">
+          <img id="projectImages" class="img-fluid" src="./images/Code-Refactor.png">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 card">
+        <h3 class="card-title text-center mt-2">Prework-Study-Guide</h3>
+        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Prework-Study-Guide/">
+          <img id="projectImages" class="img-fluid" src="./images/Prework-Study-Guide.png" alt="Prework-Study-Guide">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 card">
+        <h3 class="card-title text-center mt-2">LONGLAND</h3>
+        <a target="_blank" class="card-body text-center"
+          href="https://www.baidu.com/link?url=FvvF346VL0sXTpROLmH06_c4Hw6VUyJ8eOw8j5-FpM4t0W14uMP_pbSYTsvx9thR&wd=&eqid=e883b621000b7f5f000000066493a040"><img
+            id="projectImages" class="img-fluid" src="./images/LONGLAND.png">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 card">
+        <h3 class="card-title text-center mt-2">Password Generator</h3>
+        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/password-generator//"><img
+            id="projectImages" class="img-fluid" src="./images/PasswordGenerator.png">
+        </a>
       </div>
     </div>
-    <div class="row mb-2" id="contact">
-      <h2 class="fa col section-name opacity-75"><i class="fa-regular fa-address-card"></i> Contact
-        <span>
-          <a id="sms" target="_blank" href="sms:kchen@icloud.com">
-            <i class="fa-solid fa-comment-sms"></i></i>
-          </a>
-          <a target="_blank" href="mailto:kchen@icloud.com">
-            <i class="fa-regular fa-paper-plane" alt="email"></i>
-          </a>
-          <a target="_blank" href="https://github.com/Ronin1702">
-            <i class="fa-brands fa-github" alt="github"></i>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/kchen0755" alt="linkedin">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </span>
-      </h2>
-    </div>
+  </div>
+  <div class="row mb-2" id="contact">
+    <h2 class="fa col section-name text-secondary"><i class="fa-regular fa-address-card"></i> Contact
+      <span>
+        <a id="sms" target="_blank" href="sms:kchen@icloud.com">
+          <i class="fa-solid fa-comment-sms"></i></i>
+        </a>
+        <a target="_blank" href="mailto:kchen@icloud.com">
+          <i class="fa-regular fa-paper-plane" alt="email"></i>
+        </a>
+        <a target="_blank" href="https://github.com/Ronin1702">
+          <i class="fa-brands fa-github" alt="github"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/kchen0755" alt="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </span>
+    </h2>
+  </div>
   </div>
 
 </body>
@@ -158,7 +199,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.8/dayjs.min.js"
   integrity="sha512-af90l7+r/ujCury3kqomcoZ4aNuC4JP0xUUU682bqlRCLLvGJrc9L82zONFccLWmxcMXSqO9d6C7Rr39EkbT3Q=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="//rum-static.pingdom.net/pa-64940a6139b8d300120000f0.js" async></script>
 </body>
 
