@@ -116,7 +116,7 @@ N/A
 
 ## License
 
-* This application is licensed by [![MIT](https://img.shields.io/static/v1.svg?label=📃%20License&message=MIT&color=important)](https://lbesson.mit-license.org/).
+* This application is licensed by [![MIT](https://img.shields.io/static/v1.svg?label=📃%20License&message=MIT&color=important)](./LICENSE).
 
 [*back to top*](#table-of-contents)
 - - -
