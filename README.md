@@ -101,7 +101,7 @@ N/A
 
 ## Screenshots
 
-N/A
+![Portfolio Screenshot](./images/Portfolio.png)
 
 [*back to top*](#table-of-contents)
 
