@@ -2,221 +2,377 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kai Chen // Web Developer</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="./style.css">
-
+     <meta charset="utf-8" />
+     <meta content="width=device-width, initial-scale=1" name="viewport" />
+     <title>
+          Kai Chen // Web Developer
+     </title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print"
+          onload="this.media='all'" rel="stylesheet" />
+     <link href="./style.css" rel="stylesheet" />
+     <meta content="Kai Chen - Professional Portfolio as a Web Developer" name="description" />
 </head>
 
 <body>
-  <div class="container-fluid">
-    <header class="row">
-      <h1 class="col section-name fa" id="headerName">W e l c o m e !</h1>
-      <span class="nav col justify-content-end">
-        <a class="nav-link fa" href="#about">About</a>
-        <a class="nav-link fa" href="#work">Work</a>
-        <a class="nav-link fa" href="#contact">Contact</a>
-      </span>
-    </header>
-    <div class="row pe-2 py-1 text-end align-content-end hero-banner">
-      <p class="fst-italic fw-bold">Victoria Peak, Hong Kong</p>
-
-    </div>
-
-    <div class="row" id="about">
-      <h2 class="fa mt-2 section-name text-secondary"><i class="fa-solid fa-id-card-clip"></i> About</h2>
-      <div class="row row-cols-lg-3 cols-md-1 ms-2 mb-3">
-        <!-- about section below-->
-        <div class="mt-2 col-lg-3" id="profilePic">
-          <img class="img-fluid img-thumbnail rounded" alt="Mugshot" src="./images/MugShot.jpg">
-        </div>
-
-        <div class="mt-2 col-lg-2 list-group rounded text-end" id="aboutList">
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-1">Introduction</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-2">1988</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-3">.</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-4">.</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-5">.</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-6">2013</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-7">2017</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-8">2023</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-9">.</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-10">.</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-11">.</a>
-          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-12">2070</a>
-
-        </div>
-
-        <div id="article" class="mt-2 col-lg-7 overflow-scroll scrollspy" data-bs-spy="scroll"
-          data-bs-target="#aboutList" data-bs-smooth-scroll="true" style="height: 500px;" tabindex="0">
-          
-          <!-- contents below -->
-          <h4 id="list-item-1" class="fw-bold">Please allow me to introduce myself:</h4>
-          <p>Hi, my name is <span class="fw-bold">Kai Chen</span>. I have
-            created this website to demonstrate what
-            I've
-            learned in the OSU Coding BootCamp.</p>
-          <hr>
-          <h4 id="list-item-2" class="fw-bold">1988</h4>
-          <p>Born in the Year of <span class="fw-bold">Dragon</span>, I've always dreamed higher than the sky, and
-            contemplated deeper than the ocean. Being the 37th generation of my family, it's a bless and a curse. Life
-            begins.</p>
-          <hr>
-          <h4 id="list-item-6" class="fw-bold">2013</h4>
-          <p>Graduated from <span class="fw-bold">Ohio Dominican University</span>
-            with a Master Degree in
-            Business Administration.</p>
-          <p>Started working in <span class="fw-bold"><a target="_blank"
-                href="https://www.baidu.com/link?url=FvvF346VL0sXTpROLmH06_c4Hw6VUyJ8eOw8j5-FpM4t0W14uMP_pbSYTsvx9thR&wd=&eqid=e883b621000b7f5f000000066493a040">LONGLAND</a></span>,
-            a global electronic components
-            distribution
-            company hq'ed in the Silicon Valley of China: <span class="fw-bold">Shenzhen</span>.</p>
-          <hr>
-          <h4 id="list-item-7" class="fw-bold">2017</h4>
-          <p>Formed IVT Power Corp and joined
-            SENDYNE New York to develop a <span class="text-decoration-underline fst-italic" data-bs-toggle="tooltip"
-              title="Control Area Network">CAN System</span> <span class="fst-italic text-decoration-underline"
-              data-bs-toggle="tooltip" title="Analog to Digital">ATD</span>
-            sensor with shunt technology for <span class="text-decoration-underline fst-italic" data-bs-toggle="tooltip"
-              title="Electric Vehicles">EV</span> <span class="text-decoration-underline fst-italic"
-              data-bs-toggle="tooltip" title="Battery Management System">BMS</span>.</p>
-          <p>SPF-200 development was a success. Helping making things safer and more affordable, the module is now
-            widely used in various areas such as EV, Aviation, Satellites, etc. </p>
-          <p>Elected as the Vice President of <span class="text-decoration-underline fst-italic fw-bold"><a
-                data-bs-toggle="tooltip" title="Guangdong New Energy Vehicles Industry Association" target="_blank"
-                href="https://www.baidu.com/link?url=lDhH_GtLKfwmmJFy_xHkmVCE2eLec40FL5rvFW8daGhxUtI3bBWgdbq_ERp54ddZ&wd=&eqid=ba75d116003790f00000000664953b96">GDNEVIA</a>.
-          </p>
-          <hr>
-          <h4 id="list-item-8" class="fw-bold">2023</h4>
-          <p>God blessed me with an angel from heaven earlier this year. She is my first born. She will be the 38th
-            generation of my family. She is my everything and more.</p>
-          <p>Soon after my daughter was born I joined OSU Full-Stack Developer Program.</p>
-          <hr>
-          <p class="fst-italic text-muted text-end">"One day you'll leave this world behind,</p>
-          <p class="fst-italic text-muted text-end">So live a life you will remember."</p>
-          <p class="fst-italic text-muted text-end">- My father told me</p>
-          <hr>
-          <h4 id="list-item-12" class="fw-bold">2070</h4>
-          <p>By average a human has about <span class="fts-bold">30,000</span> days on planet earth.</p>
-          <p>November 3 2070 will be my 30,000th day. I pray that I may still code and hope at the age of 82.</p>
-          <hr>
-        </div>
-        <!-- about section above -->
-      </div>
-    </div>
-  </div>
-  <div class="row mb-3" id="work">
-    <h2 class="fa section-name text-secondary"><i class="fa-solid fa-laptop-code"></i> Work</h2>
-    <div class="row ms-3 mt-2 ">
-
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">Maryze</h3>
-        <a target="_blank" class="card-body text-center"
-          href="https://maryze-t1p2-1c897d7fd819.herokuapp.com/"><img id="projectImages" class="img-fluid"
-            src="./images/Maryze.png">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">Note Taker 3000</h3>
-        <a target="_blank" class="card-body text-center"
-          href="https://note-taker-v3000-27717ed21972.herokuapp.com/"><img id="projectImages" class="img-fluid"
-            src="./images/nt3000-main.png">
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">krapyak</h3>
-        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/krapyak/">
-          <img id="projectImages" class="img-fluid"
-            src="https://github.com/Ronin1702/krapyak/assets/131202032/b511f917-8cb1-47e4-9fe0-6fb7f797954a">
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">Weather-Dashboard</h3>
-        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Weather-Dashboard//">
-          <img id="projectImages" class="img-fluid" src="./images/Weather-Dashboard.png">
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">Work-Day-Scheduler</h3>
-        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Work-Day-Scheduler/"><img
-            id="projectImages" class="img-fluid" src="./images/Work-Day-Scheduler.png">
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">Password Generator</h3>
-        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/password-generator//"><img
-            id="projectImages" class="img-fluid" src="./images/PasswordGenerator.png">
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">Code-Quiz</h3>
-        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Code-Quiz/"><img
-            id="projectImages" class="img-fluid" src="./images/Code-Quiz.png">
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">Code-Refactor</h3>
-        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Code-Refactor/">
-          <img id="projectImages" class="img-fluid" src="./images/Code-Refactor.png">
-        </a>
-      </div>
-
-      <div class="col-lg-3 col-md-6 card">
-        <h3 class="card-title text-center mt-2">Prework-Study-Guide</h3>
-        <a target="_blank" class="card-body text-center" href="https://ronin1702.github.io/Prework-Study-Guide/">
-          <img id="projectImages" class="img-fluid" src="./images/Prework-Study-Guide.png" alt="Prework-Study-Guide">
-        </a>
-      </div>
-
-    </div>
-  </div>
-  <div class="row mb-2" id="contact">
-    <h2 class="fa col section-name text-secondary"><i class="fa-regular fa-address-card"></i> Contact
-      <span>
-        <a id="sms" target="_blank" href="sms:kchen@icloud.com">
-          <i class="fa-solid fa-comment-sms"></i></i>
-        </a>
-        <a target="_blank" href="mailto:kchen@icloud.com">
-          <i class="fa-regular fa-paper-plane" alt="email"></i>
-        </a>
-        <a target="_blank" href="https://github.com/Ronin1702">
-          <i class="fa-brands fa-github" alt="github"></i>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/kchen0755" alt="linkedin">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </span>
-    </h2>
-  </div>
-  </div>
-
-</body>
-<footer class="footer text-center mt-auto py-3">
-  <p class="text-muted"> © 2023 Kai Chen
-    <span id="siteseal">
-      <script async type="text/javascript"
-        src="https://seal.starfieldtech.com/getSeal?sealID=7lRw8AXI7Ea6kwl8WzWbYbXpomcp5Bcin14hBAvIPYfK1Wk5sIbJj6o6npEa"></script>
-    </span>
-  </p>
-
-</footer>
-<scrip src="./script.js"></scrip>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-  integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://kit.fontawesome.com/2ca4a978bf.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.8/dayjs.min.js"
-  integrity="sha512-af90l7+r/ujCury3kqomcoZ4aNuC4JP0xUUU682bqlRCLLvGJrc9L82zONFccLWmxcMXSqO9d6C7Rr39EkbT3Q=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <div class="container-fluid">
+          <header class="row">
+               <h1 class="col section-name fa" id="headerName">
+                    W e l c o m e !
+               </h1>
+               <span class="nav col justify-content-end">
+                    <a class="nav-link fa" href="#about">
+                         About
+                    </a>
+                    <a class="nav-link fa" href="#work">
+                         Work
+                    </a>
+                    <a class="nav-link fa" href="#contact">
+                         Contact
+                    </a>
+               </span>
+          </header>
+          <div class="row pe-2 py-1 text-end align-content-end hero-banner">
+               <p class="fst-italic fw-bold">
+                    Victoria Peak, Hong Kong
+               </p>
+          </div>
+          <div class="row" id="about">
+               <h2 class="fa mt-2 section-name text-secondary">
+                    <i class="fa-solid fa-id-card-clip">
+                    </i>
+                    About
+               </h2>
+               <div class="row row-cols-lg-3 cols-md-1 ms-2 mb-3">
+                    <!-- about section below-->
+                    <div class="mt-2 col-lg-3" id="profilePic">
+                         <img alt="Kai Chen" class="img-fluid img-thumbnail rounded" src="./images/MugShot.jpg" />
+                    </div>
+                    <div class="mt-2 col-lg-2 list-group rounded text-end" id="aboutList">
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-1">
+                              Introduction
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-2">
+                              1988
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-3">
+                              .
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-4">
+                              .
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-5">
+                              .
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-6">
+                              2013
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-7">
+                              2017
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-8">
+                              2023
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-9">
+                              .
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-10">
+                              .
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-11">
+                              .
+                         </a>
+                         <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-12">
+                              2070
+                         </a>
+                    </div>
+                    <div class="mt-2 col-lg-7 overflow-scroll scrollspy" data-bs-smooth-scroll="true"
+                         data-bs-spy="scroll" data-bs-target="#aboutList" id="article" style="height: 500px;"
+                         tabindex="0">
+                         <!-- contents below -->
+                         <h4 class="fw-bold" id="list-item-1">
+                              Please allow me to introduce myself:
+                         </h4>
+                         <p>
+                              Hi, my name is
+                              <span class="fw-bold">
+                                   Kai Chen
+                              </span>
+                              . I have
+                              created this website to demonstrate what
+                              I've
+                              learned in the OSU Coding BootCamp.
+                         </p>
+                         <hr />
+                         <h4 class="fw-bold" id="list-item-2">
+                              1988
+                         </h4>
+                         <p>
+                              Born in the Year of
+                              <span class="fw-bold">
+                                   Dragon
+                              </span>
+                              , I've always dreamed higher than the sky, and
+                              contemplated deeper than the ocean. Being the 37th generation of my family, it's a bless
+                              and a curse. Life
+                              begins.
+                         </p>
+                         <hr />
+                         <h4 class="fw-bold" id="list-item-6">
+                              2013
+                         </h4>
+                         <p>
+                              Graduated from
+                              <span class="fw-bold">
+                                   Ohio Dominican University
+                              </span>
+                              with a Master Degree in
+                              Business Administration.
+                         </p>
+                         <p>
+                              Started working in
+                              <span class="fw-bold">
+                                   <a href="https://www.baidu.com/link?url=FvvF346VL0sXTpROLmH06_c4Hw6VUyJ8eOw8j5-FpM4t0W14uMP_pbSYTsvx9thR&amp;wd=&amp;eqid=e883b621000b7f5f000000066493a040"
+                                        target="_blank">
+                                        LONGLAND
+                                   </a>
+                              </span>
+                              ,
+                              a global electronic components
+                              distribution
+                              company hq'ed in the Silicon Valley of China:
+                              <span class="fw-bold">
+                                   Shenzhen
+                              </span>
+                              .
+                         </p>
+                         <hr />
+                         <h4 class="fw-bold" id="list-item-7">
+                              2017
+                         </h4>
+                         <p>
+                              Formed IVT Power Corp and joined
+                              SENDYNE New York to develop a
+                              <span class="text-decoration-underline fst-italic" data-bs-toggle="tooltip"
+                                   title="Control Area Network">
+                                   CAN System
+                              </span>
+                              <span class="fst-italic text-decoration-underline" data-bs-toggle="tooltip"
+                                   title="Analog to Digital">
+                                   ATD
+                              </span>
+                              sensor with shunt technology for
+                              <span class="text-decoration-underline fst-italic" data-bs-toggle="tooltip"
+                                   title="Electric Vehicles">
+                                   EV
+                              </span>
+                              <span class="text-decoration-underline fst-italic" data-bs-toggle="tooltip"
+                                   title="Battery Management System">
+                                   BMS
+                              </span>
+                              .
+                         </p>
+                         <p>
+                              SPF-200 development was a success. Helping making things safer and more affordable, the
+                              module is now
+                              widely used in various areas such as EV, Aviation, Satellites, etc.
+                         </p>
+                         <p>
+                              Elected as the Vice President of
+                              <span class="text-decoration-underline fst-italic fw-bold">
+                                   <a data-bs-toggle="tooltip"
+                                        href="https://www.baidu.com/link?url=lDhH_GtLKfwmmJFy_xHkmVCE2eLec40FL5rvFW8daGhxUtI3bBWgdbq_ERp54ddZ&amp;wd=&amp;eqid=ba75d116003790f00000000664953b96"
+                                        target="_blank" title="Guangdong New Energy Vehicles Industry Association">
+                                        GDNEVIA
+                                   </a>
+                                   .
+                              </span>
+                         </p>
+                         <hr />
+                         <h4 class="fw-bold" id="list-item-8">
+                              2023
+                         </h4>
+                         <p>
+                              God blessed me with an angel from heaven earlier this year. She is my first born. She will
+                              be the 38th
+                              generation of my family. She is my everything and more.
+                         </p>
+                         <p>
+                              Soon after my daughter was born I joined OSU Full-Stack Developer Program.
+                         </p>
+                         <hr />
+                         <p class="fst-italic text-muted text-end">
+                              "One day you'll leave this world behind,
+                         </p>
+                         <p class="fst-italic text-muted text-end">
+                              So live a life you will remember."
+                         </p>
+                         <p class="fst-italic text-muted text-end">
+                              - My father told me
+                         </p>
+                         <hr />
+                         <h4 class="fw-bold" id="list-item-12">
+                              2070
+                         </h4>
+                         <p>
+                              By average a human has about
+                              <span class="fts-bold">
+                                   30,000
+                              </span>
+                              days on planet earth.
+                         </p>
+                         <p>
+                              November 3 2070 will be my 30,000th day. I pray that I may still code and hope at the age
+                              of 82.
+                         </p>
+                         <hr />
+                    </div>
+                    <!-- about section above -->
+               </div>
+          </div>
+     </div>
+     <div class="row mb-3" id="work">
+          <h2 class="fa section-name text-secondary">
+               <i class="fa-solid fa-laptop-code">
+               </i>
+               Work
+          </h2>
+          <div class="row ms-3 mt-2">
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         Maryze
+                    </h3>
+                    <a class="card-body text-center" href="https://maryze-t1p2-1c897d7fd819.herokuapp.com/"
+                         target="_blank">
+                         <img alt="Maryze" class="img-fluid" id="projectImages" src="./images/Maryze.png" />
+                    </a>
+               </div>
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         Note Taker 3000
+                    </h3>
+                    <a class="card-body text-center" href="https://note-taker-v3000-27717ed21972.herokuapp.com/"
+                         target="_blank">
+                         <img alt="Note Taker 3000" class="img-fluid" id="projectImages"
+                              src="./images/nt3000-main.png" />
+                    </a>
+               </div>
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         krapyak
+                    </h3>
+                    <a class="card-body text-center" href="https://ronin1702.github.io/krapyak/" target="_blank">
+                         <img alt="Krapyak" class="img-fluid" id="projectImages"
+                              src="https://github.com/Ronin1702/krapyak/assets/131202032/b511f917-8cb1-47e4-9fe0-6fb7f797954a" />
+                    </a>
+               </div>
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         Weather-Dashboard
+                    </h3>
+                    <a class="card-body text-center" href="https://ronin1702.github.io/Weather-Dashboard//"
+                         target="_blank">
+                         <img alt="Weather Dashboard" class="img-fluid" id="projectImages"
+                              src="./images/Weather-Dashboard.png" />
+                    </a>
+               </div>
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         Work-Day-Scheduler
+                    </h3>
+                    <a class="card-body text-center" href="https://ronin1702.github.io/Work-Day-Scheduler/"
+                         target="_blank">
+                         <img alt="Project Image" class="img-fluid" id="projectImages"
+                              src="./images/Work-Day-Scheduler.png" />
+                    </a>
+               </div>
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         Password Generator
+                    </h3>
+                    <a class="card-body text-center" href="https://ronin1702.github.io/password-generator//"
+                         target="_blank">
+                         <img alt="Project Image" class="img-fluid" id="projectImages"
+                              src="./images/PasswordGenerator.png" />
+                    </a>
+               </div>
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         Code-Quiz
+                    </h3>
+                    <a class="card-body text-center" href="https://ronin1702.github.io/Code-Quiz/" target="_blank">
+                         <img alt="Project Image" class="img-fluid" id="projectImages" src="./images/Code-Quiz.png" />
+                    </a>
+               </div>
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         Code-Refactor
+                    </h3>
+                    <a class="card-body text-center" href="https://ronin1702.github.io/Code-Refactor/" target="_blank">
+                         <img alt="Code Refactor: Horiseon" class="img-fluid" id="projectImages"
+                              src="./images/Code-Refactor.png" />
+                    </a>
+               </div>
+               <div class="col-lg-3 col-md-6 card">
+                    <h3 class="card-title text-center mt-2">
+                         Prework-Study-Guide
+                    </h3>
+                    <a class="card-body text-center" href="https://ronin1702.github.io/Prework-Study-Guide/"
+                         target="_blank">
+                         <img alt="Prework Study Guide" class="img-fluid" id="projectImages"
+                              src="./images/Prework-Study-Guide.png" />
+                    </a>
+               </div>
+          </div>
+     </div>
+     <div class="row mb-2" id="contact">
+          <h2 class="fa section-name text-secondary">
+               <i class="fa-regular fa-address-card">
+               </i>
+               Contact
+               <a href="sms:kchen@icloud.com" id="sms" target="_blank">
+                    <i alt="sms" class="fa-solid fa-comment-sms">
+                    </i>
+               </a>
+               <a href="mailto:kchen@icloud.com" id="email" target="_blank">
+                    <i alt="email" class="fa-regular fa-paper-plane">
+                    </i>
+               </a>
+               <a href="https://github.com/Ronin1702" id="github" target="_blank">
+                    <i alt="github" class="fa-brands fa-github">
+                    </i>
+               </a>
+               <a href="https://www.linkedin.com/in/kchen0755" id="linkedin" target="_blank">
+                    <i alt="linkedin" class="fa-brands fa-linkedin">
+                    </i>
+               </a>
+          </h2>
+     </div>
 </body>
 
 </html>
+
+<footer class="footer text-center mt-auto py-3">
+     <p class="text-muted">
+          © 2023 Kai Chen
+          <span id="siteseal">
+               <script async=""
+                    src="https://seal.starfieldtech.com/getSeal?sealID=7lRw8AXI7Ea6kwl8WzWbYbXpomcp5Bcin14hBAvIPYfK1Wk5sIbJj6o6npEa"
+                    type="text/javascript">
+                    </script>
+          </span>
+     </p>
+</footer>
+<scrip src="./script.js">
+</scrip>
+<script crossorigin="anonymous"
+     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+     referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+     </script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/2ca4a978bf.js">
+</script>
+<script crossorigin="anonymous"
+     integrity="sha512-af90l7+r/ujCury3kqomcoZ4aNuC4JP0xUUU682bqlRCLLvGJrc9L82zONFccLWmxcMXSqO9d6C7Rr39EkbT3Q=="
+     referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.8/dayjs.min.js">
+     </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+</script>
