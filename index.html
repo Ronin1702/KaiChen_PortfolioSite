@@ -7,6 +7,10 @@
      <title>
           Kai Chen // Web Developer
      </title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Monomaniac+One&display=swap"
+          rel="stylesheet">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print"
           onload="this.media='all'" rel="stylesheet" />
      <link href="./style.css" rel="stylesheet" />
@@ -16,17 +20,17 @@
 <body>
      <div class="container-fluid">
           <header class="row">
-               <h1 class="col section-name fa" id="headerName">
+               <h1 class="col section-name " id="headerName">
                     W e l c o m e !
                </h1>
                <span class="nav col justify-content-end">
-                    <a class="nav-link fa" href="#about">
+                    <a class="nav-link " href="#about">
                          About
                     </a>
-                    <a class="nav-link fa" href="#work">
+                    <a class="nav-link " href="#work">
                          Work
                     </a>
-                    <a class="nav-link fa" href="#contact">
+                    <a class="nav-link " href="#contact">
                          Contact
                     </a>
                </span>
@@ -37,7 +41,7 @@
                </p>
           </div>
           <div class="row" id="about">
-               <h2 class="fa mt-2 section-name text-secondary">
+               <h2 class="mt-2 section-name text-secondary">
                     <i class="fa-solid fa-id-card-clip">
                     </i>
                     About
@@ -45,7 +49,8 @@
                <div class="row row-cols-lg-3 cols-md-1 ms-2 mb-3">
                     <!-- about section below-->
                     <div class="mt-2 col-lg-3" id="profilePic">
-                         <img alt="Kai Chen" class="img-fluid img-thumbnail rounded" src="./images/kaichen.jpg" />
+                         <img alt="Kai Chen Profile Pic" class="img-fluid img-thumbnail rounded"
+                              src="./images/kaichen.jpg">
                     </div>
                     <div class="mt-2 col-lg-2 list-group rounded text-end" id="aboutList">
                          <a class="list-group-item list-group-item-action bg-gradient" href="#list-item-1">
@@ -130,12 +135,10 @@
                          </p>
                          <p>
                               Started working in
-                              <span class="fw-bold">
-                                   <a href="https://www.baidu.com/link?url=FvvF346VL0sXTpROLmH06_c4Hw6VUyJ8eOw8j5-FpM4t0W14uMP_pbSYTsvx9thR&amp;wd=&amp;eqid=e883b621000b7f5f000000066493a040"
-                                        target="_blank">
-                                        LONGLAND
-                                   </a>
-                              </span>
+                              <a href="https://www.baidu.com/link?url=FvvF346VL0sXTpROLmH06_c4Hw6VUyJ8eOw8j5-FpM4t0W14uMP_pbSYTsvx9thR&amp;wd=&amp;eqid=e883b621000b7f5f000000066493a040"
+                                   target="_blank">
+                                   <img alt="LONGLAND" width="69" class="img-fluid"
+                                        src="./images/logo-longland.png" /></a>
                               ,
                               a global electronic components
                               distribution
@@ -231,42 +234,41 @@
           </div>
      </div>
      <div class="row mb-3" id="work">
-          <h2 class="fa section-name text-secondary">
+          <h2 class="section-name text-secondary">
                <i class="fa-solid fa-laptop-code">
                </i>
                Work
           </h2>
           <div class="row ms-3 mt-2">
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4  card-title text-center mt-4">
                          Maryze
                     </h3>
                     <a class="card-body text-center" href="https://maryze-t1p2-1c897d7fd819.herokuapp.com/"
                          target="_blank">
-                         <img alt="Maryze" class="img-fluid" id="projectImages" src="./images/Maryze.png" />
+                         <img alt="Maryze" class="img-fluid" id="projectImages" src="./images/maryze-768px.png" />
                     </a>
                </div>
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4 card-title text-center mt-4">
                          Note Taker 3000
                     </h3>
                     <a class="card-body text-center" href="https://note-taker-v3000-27717ed21972.herokuapp.com/"
                          target="_blank">
                          <img alt="Note Taker 3000" class="img-fluid" id="projectImages"
-                              src="./images/nt3000-main.png" />
+                              src="./images/note-taker-3000-768px.png" />
                     </a>
                </div>
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4 card-title text-center mt-4">
                          krapyak
                     </h3>
                     <a class="card-body text-center" href="https://ronin1702.github.io/krapyak/" target="_blank">
-                         <img alt="Krapyak" class="img-fluid" id="projectImages"
-                              src="https://github.com/Ronin1702/krapyak/assets/131202032/b511f917-8cb1-47e4-9fe0-6fb7f797954a" />
+                         <img alt="Krapyak" class="img-fluid" id="projectImages" src="./images/krapyak-720p.png" />
                     </a>
                </div>
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4 card-title text-center mt-4">
                          Weather-Dashboard
                     </h3>
                     <a class="card-body text-center" href="https://ronin1702.github.io/Weather-Dashboard//"
@@ -276,7 +278,7 @@
                     </a>
                </div>
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4 card-title text-center mt-4">
                          Work-Day-Scheduler
                     </h3>
                     <a class="card-body text-center" href="https://ronin1702.github.io/Work-Day-Scheduler/"
@@ -286,7 +288,7 @@
                     </a>
                </div>
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4 card-title text-center mt-4">
                          Password Generator
                     </h3>
                     <a class="card-body text-center" href="https://ronin1702.github.io/password-generator//"
@@ -296,36 +298,37 @@
                     </a>
                </div>
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4 card-title text-center mt-4">
                          Code-Quiz
                     </h3>
                     <a class="card-body text-center" href="https://ronin1702.github.io/Code-Quiz/" target="_blank">
-                         <img alt="Project Image" class="img-fluid" id="projectImages" src="./images/Code-Quiz.png" />
+                         <img alt="Project Image" class="img-fluid" id="projectImages"
+                              src="./images/code-quiz-768px.png" />
                     </a>
                </div>
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4 card-title text-center mt-4">
                          Code-Refactor
                     </h3>
                     <a class="card-body text-center" href="https://ronin1702.github.io/Code-Refactor/" target="_blank">
                          <img alt="Code Refactor: Horiseon" class="img-fluid" id="projectImages"
-                              src="./images/Code-Refactor.png" />
+                              src="./images/code-refactor-720p.png" />
                     </a>
                </div>
                <div class="col-lg-3 col-md-6 card">
-                    <h3 class="card-title text-center mt-2">
+                    <h3 class="display-4 card-title text-center mt-4">
                          Prework-Study-Guide
                     </h3>
                     <a class="card-body text-center" href="https://ronin1702.github.io/Prework-Study-Guide/"
                          target="_blank">
                          <img alt="Prework Study Guide" class="img-fluid" id="projectImages"
-                              src="./images/Prework-Study-Guide.png" />
+                              src="./images/prework-study-guide-720p.png" />
                     </a>
                </div>
           </div>
      </div>
      <div class="row mb-2" id="contact">
-          <h2 class="fa section-name text-secondary">
+          <h2 class="section-name text-secondary">
                <i class="fa-regular fa-address-card">
                </i>
                Contact
@@ -365,15 +368,9 @@
 </footer>
 <scrip src="./script.js">
 </scrip>
-<script crossorigin="anonymous"
-     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-     referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
      </script>
-<script crossorigin="anonymous" src="https://kit.fontawesome.com/2ca4a978bf.js">
+<script src="https://kit.fontawesome.com/2ca4a978bf.js">
 </script>
-<script crossorigin="anonymous"
-     integrity="sha512-af90l7+r/ujCury3kqomcoZ4aNuC4JP0xUUU682bqlRCLLvGJrc9L82zONFccLWmxcMXSqO9d6C7Rr39EkbT3Q=="
-     referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.8/dayjs.min.js">
-     </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
 </script>

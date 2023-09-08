@@ -1,3 +1,7 @@
+//Fully load the DOM before running the script
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM fully loaded and parsed");
+
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -13,8 +17,7 @@ document.querySelectorAll('#nav-tab>[data-bs-toggle="tab"]').forEach(el => {
 })
 
 // Code to overwrite ARIA attributes
-document.addEventListener("DOMContentLoaded", function() {
-  const elementsToFix = document.querySelectorAll(".fa");
+  const elementsToFix = document.getElementsByClassName('fa');
   elementsToFix.forEach(element => {
     element.setAttribute("aria-hidden", "false");
   });
