@@ -1,5 +1,3 @@
-
-
 /* brand color palette */
 :root {
   --primary: rgba(68, 88, 119, 1);
@@ -194,4 +192,9 @@ header {
 
 #article:hover{
   cursor:ns-resize;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

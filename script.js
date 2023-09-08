@@ -11,3 +11,11 @@ document.querySelectorAll('#nav-tab>[data-bs-toggle="tab"]').forEach(el => {
     bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
   })
 })
+
+// Code to overwrite ARIA attributes
+document.addEventListener("DOMContentLoaded", function() {
+  const elementsToFix = document.querySelectorAll(".fa");
+  elementsToFix.forEach(element => {
+    element.setAttribute("aria-hidden", "false");
+  });
+});
