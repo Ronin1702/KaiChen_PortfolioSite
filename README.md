@@ -17,7 +17,7 @@ This is the first personal portfolio site that I made at the first week as a  Fu
 
 * Featuring Vite, V.2 is Now On [Netlify](https:kaichen-3000.netlify.app)
 
-* For the Latest Version, visit [kaichen.biz](https://kaichen.biz)
+* For the Latest Version, visit [kaichen.biz](https://kaichen.biz), [kaichen.io](https://www.kaichen.io), or [1-800-Kai-Chen.com](https://1800kaichen.com)
 
 [*back to top*](#table-of-contents)
 
